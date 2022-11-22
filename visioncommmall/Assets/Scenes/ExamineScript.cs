@@ -22,7 +22,7 @@ public class ExamineScript : MonoBehaviour
 
     [Header("Unique")]
     public GameObject ExamineObject;
-    public GameObject keyOB;
+    public GameObject RealOB;
     public GameObject aboutText;
 
     void Start()
