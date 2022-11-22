@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -34,14 +35,14 @@ public void ListItems()
      foreach(var item in Items)
 	{
 	GameObject obj=Instantiate(InventoryItem, ItemContent);
-   
- var itemName = obj.transform.Find("Text(TMP)").GetComponent<Text>();
-	var itemIcon = obj.transform.Find("itemimage").GetComponent<Image>();
-var removeButton=obj.transform.Find("RemoveButton").gameObject;
+   Debug.Log(obj);
+ var itemName = obj.transform.Find("ItemName").GetComponentInChildren<TMP_Text>();
+	var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
+// var removeButton=obj.transform.Find("RemoveButton").gameObject;
 itemName.text=item.itemName;
 itemIcon.sprite=item.icon; 
 // if(EnableRemove.isOn)
-removeButton.gameObject.SetActive(true);
+// removeButton.gameObject.SetActive(true);
 // }
 // 	}
 SetInventoryItems();
