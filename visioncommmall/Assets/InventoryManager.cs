@@ -24,6 +24,9 @@ public void Remove(Item item)
   {
     Items.Remove(item);
   }
+  
+
+  
 public void ListItems()
    {
    
@@ -32,6 +35,7 @@ public void ListItems()
 	{
            Destroy (item.gameObject);
 	}
+ 
      foreach(var item in Items)
 	{
 	GameObject obj=Instantiate(InventoryItem, ItemContent);
@@ -45,7 +49,9 @@ itemIcon.sprite=item.icon;
 // removeButton.gameObject.SetActive(true);
 // }
 // 	}
+void Update(){
 SetInventoryItems();
+}
 // 	}
 // public void EnableItemsRemove()
 // {
@@ -65,6 +71,7 @@ SetInventoryItems();
 // 	}
 	}
    }
+
 
 
 
