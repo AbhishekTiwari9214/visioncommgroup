@@ -38,11 +38,13 @@ Destroy(gameObject);
        
 //         if (DoubleClick())
 //         {
-//             Pickup();
+//             Vector2 mousePos = new Vector2(Screen.width - Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+//             if (this.GetComponent<RectTransform>().rect.Contains(mousePos)) {
+//                 Pickup();
+//             }
  
-//         }
 //     }
-
+//     }
 
 private void OnMouseDown()
 {
