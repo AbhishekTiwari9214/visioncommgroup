@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276774, g: 0.21589115, b: 0.2978246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -912,9 +912,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2028142757}
-  - {fileID: 822830479}
   - {fileID: 820477587}
   - {fileID: 1094477754}
+  - {fileID: 822830479}
   m_Father: {fileID: 1250359672}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2205,6 +2205,7 @@ MonoBehaviour:
   Items: []
   ItemContent: {fileID: 284194425}
   InventoryItem: {fileID: 6064563758481983479, guid: 3373a9af33e1b40c9985e11efe3bcd8e, type: 3}
+  Total: {fileID: 0}
   InventoryItems: []
 --- !u!1001 &292721128
 PrefabInstance:
@@ -3583,6 +3584,7 @@ MonoBehaviour:
   Items: []
   ItemContent: {fileID: 284194425}
   InventoryItem: {fileID: 6064563758481983479, guid: 3373a9af33e1b40c9985e11efe3bcd8e, type: 3}
+  Total: {fileID: 822830480}
   InventoryItems: []
 --- !u!4 &404136473
 Transform:
@@ -18152,7 +18154,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028142756}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!1 &2053566563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5da12c64b663e3449b57ab5b6345ad62, type: 3}
@@ -18986,6 +18988,10 @@ PrefabInstance:
       propertyPath: playerBody
       value: 
       objectReference: {fileID: 963194228}
+    - target: {fileID: 5371505330266204765, guid: 56b869460349e45da8f7bd33099953a1, type: 3}
+      propertyPath: mouseSensitivity
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 5371505330266204767, guid: 56b869460349e45da8f7bd33099953a1, type: 3}
       propertyPath: moveSpeed
       value: 5
