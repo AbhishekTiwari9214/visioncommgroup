@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276774, g: 0.21589115, b: 0.2978246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1589,6 +1589,77 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5da12c64b663e3449b57ab5b6345ad62, type: 3}
+--- !u!1001 &220679925
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6022313983577979496, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_Name
+      value: Teddybear (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.71717423
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7171745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7171748
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.568002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.77493
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022313983578465864, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d0bbe42d0b1446cf97c820ab9eb76e9, type: 3}
 --- !u!1001 &221948663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19015,6 +19086,10 @@ PrefabInstance:
       propertyPath: playerBody
       value: 
       objectReference: {fileID: 963194228}
+    - target: {fileID: 5371505330266204765, guid: 56b869460349e45da8f7bd33099953a1, type: 3}
+      propertyPath: mouseSensitivity
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 5371505330266204767, guid: 56b869460349e45da8f7bd33099953a1, type: 3}
       propertyPath: moveSpeed
       value: 5
