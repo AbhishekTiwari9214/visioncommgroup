@@ -12,7 +12,7 @@ public class moving : MonoBehaviour
         rb=GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
+    // Update is Called Once Per Frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
