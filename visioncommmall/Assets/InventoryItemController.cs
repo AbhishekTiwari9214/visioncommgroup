@@ -7,7 +7,7 @@ public class InventoryItemController : MonoBehaviour
 {
    
 Item item;
-	public Button RemoveButton;
+	public Button deleteitem;
 public void RemoveItem()
 {
 InventoryManager.Instance.Remove(item);
