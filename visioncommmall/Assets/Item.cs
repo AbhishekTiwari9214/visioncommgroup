@@ -1,4 +1,4 @@
-
+ 
 using UnityEngine;
 
 [CreateAssetMenu(fileName="New Item",menuName="Item/Create New Item")]
