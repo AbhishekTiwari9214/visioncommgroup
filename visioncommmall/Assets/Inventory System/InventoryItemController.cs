@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class InventoryItemController : MonoBehaviour
 {
-   
+  
 Item item;
-	public Button RemoveButton;
+	public Button deleteitem;
 public void RemoveItem()
 {
 InventoryManager.Instance.Remove(item);
@@ -17,5 +17,10 @@ public void AddItem(Item newItem)
 {
 item = newItem;
 }
+/* public  void useitem()
+ {
+	value=
+total.Instance.PriceItem(Instance.item.price);
+ }*/
 }
  

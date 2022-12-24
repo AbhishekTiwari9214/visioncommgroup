@@ -8,24 +8,28 @@ public class InventoryManager : MonoBehaviour
 {
    public static InventoryManager Instance;
 public List<Item> Items =new List<Item>();
+
 public Transform ItemContent;
 public GameObject InventoryItem;
 public TMP_Text Total;
+public Toggle EnableRemove;
 
 // public TMP_Text Price;
 
 
-// Debug.Log(sumtotal);
-// public Toggle EnableRemove;
+
 public InventoryItemController[] InventoryItems;
+
 private void Awake()
   {
     Instance=this;
   }
+
 public void Add(Item item)
   {
     Items.Add(item);
   }
+
 public void Remove(Item item)
   {
     Items.Remove(item);
@@ -42,65 +46,58 @@ public void ListItems()
     
            Destroy (item.gameObject);
 	}
-  // foreach(var item in Items){
-  //   sumtotal+=item.price;
-  // }
-  var sumtotal=0.0;
+  
+  float sumtotal=0;
      foreach(var item in Items)
 	{
-  
-    //  sumtotal+= item.price;
 	GameObject obj=Instantiate(InventoryItem, ItemContent);
-  //  Debug.Log(sumtotal);
  var itemName = obj.transform.Find("ItemName").GetComponentInChildren<TMP_Text>();
 	var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
    var itemPrice = obj.transform.Find("price").GetComponentInChildren<TMP_Text>();
-// var removeButton=obj.transform.Find("RemoveButton").gameObject;
+var removeButton = obj.transform.Find("deleteitem").GetComponent<Button>();
 itemName.text=item.itemName;
 itemIcon.sprite=item.icon; 
  sumtotal+= item.price;
-// Debug.Log(sumtotal);
-
 itemPrice.text= $"{item.price}";
 Total.text=$"{sumtotal}";
-// if(EnableRemove.isOn)
-// removeButton.gameObject.SetActive(true);
-// }
-// 	}
-void Update(){
-
-SetInventoryItems();
-
+  
+if (EnableRemove.isOn)
+{
+ removeButton.gameObject.SetActive(true);
 }
-// 	}
-// public void EnableItemsRemove()
-// {
-//  if (EnableRemove.isOn)
-// 	{
-// 		foreach(Transform item in ItemContent)
-// 	{
-// 		item.Find("RemoveButton").gameObject.setActive(true);
-// 	}
-// 	}
-// else
-// 	{
-	// 	foreach(Transform item in ItemContent)
-	// {
-	// 	item.Find("RemoveButton").gameObject.setActive(true);
-	// }
-// 	}
 	}
+SetInventoryItems();
+if(Items.Count==0){
+  sumtotal=0;
+  Total.text=$"{sumtotal}";
+}
    }
 
+public void EnableItemsRemove()
+ {
+ if (EnableRemove.isOn)
+	{
+		foreach(Transform item in ItemContent)
+ 	  {
+ 		item.Find("deleteitem").gameObject.SetActive(true);
+ 	  }
+  }
+ else
+	{
+	 	foreach(Transform item in ItemContent)
+	 {
+	 	item.Find("deleteitem").gameObject.SetActive(false);
+   }
+	}
+  }
 
 
 
- void SetInventoryItems()
+
+  public void SetInventoryItems()
 {
-
-
-InventoryItems=ItemContent.GetComponentsInChildren<InventoryItemController>();
-for(int i=0;i<Items.Count;i++)
+InventoryItems = ItemContent.GetComponentsInChildren<InventoryItemController>();
+for(int i=0;i < Items.Count;i++)
 {
 InventoryItems[i].AddItem(Items[i]);
 }
