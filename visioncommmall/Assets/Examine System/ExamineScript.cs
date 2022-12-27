@@ -11,6 +11,7 @@ public class ExamineScript : MonoBehaviour
 
     public GameObject InteractText;
     public GameObject ExamineUI;
+    public GameObject atcUI;
     public bool inReach;
     public bool isExaming;
 
@@ -22,8 +23,9 @@ public class ExamineScript : MonoBehaviour
 
     [Header("Unique")]
     public GameObject ExamineObject;
-    public GameObject RealOB;
+    public GameObject RealObject;
     public GameObject aboutText;
+
 
     void Start()
     {
@@ -60,8 +62,10 @@ public class ExamineScript : MonoBehaviour
             isExaming = true;
             InteractText.SetActive(false);
             ExamineUI.SetActive(true);
+		atcUI.SetActive(true);
             Hud.SetActive(false);
             ExamineObject.SetActive(true);
+	//	RealObject.SetActive(false);
             aboutText.SetActive(true);
             Time.timeScale = 0;
 		player.SetActive(false);
@@ -81,8 +85,10 @@ public class ExamineScript : MonoBehaviour
             mainCamera.SetActive(true);
             isExaming = false;
             ExamineUI.SetActive(false);
+		atcUI.SetActive(false);
             Hud.SetActive(true);
             ExamineObject.SetActive(false);
+	//	RealObject.SetActive(true);
             aboutText.SetActive(false);
             Time.timeScale = 1;
 		player.SetActive(true);
