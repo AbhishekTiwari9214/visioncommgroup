@@ -71,7 +71,7 @@ if(Items.Count==0){
   Total.text=$"{sumtotal}";
 }
    }
-
+/////////////////////////////////////////////////////////////////////
 public void EnableItemsRemove()
  {
  if (EnableRemove.isOn)
