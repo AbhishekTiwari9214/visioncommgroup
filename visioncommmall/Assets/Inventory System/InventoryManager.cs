@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour
 {
    public static InventoryManager Instance;
 public List<Item> Items =new List<Item>();
-
+//public List<string> myList = new List<string>();
 public Transform ItemContent;
 public GameObject InventoryItem;
 public TMP_Text Total;
@@ -16,7 +16,7 @@ public Toggle EnableRemove;
 
 // public TMP_Text Price;
 
-
+ float sumtotal=0;
 
 public InventoryItemController[] InventoryItems;
 
@@ -31,12 +31,11 @@ public void Add(Item item)
   }
 
 public void Remove(Item item)
-  {
+  { 
+  //sumtotal-= item.price;
+ // Total.text=$"{sumtotal}";
     Items.Remove(item);
-  }
-  
-
-  
+  } 
 public void ListItems()
    {
    
@@ -47,7 +46,7 @@ public void ListItems()
            Destroy (item.gameObject);
 	}
   
-  float sumtotal=0;
+ sumtotal=0;
      foreach(var item in Items)
 	{
 	GameObject obj=Instantiate(InventoryItem, ItemContent);
