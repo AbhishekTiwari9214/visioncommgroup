@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4a3c916d140ae4e608f1010e112bbc96
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ItemContent: {instanceID: 0}
+  - InventoryItem: {instanceID: 0}
+  - Total: {instanceID: 0}
+  - EnableRemove: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

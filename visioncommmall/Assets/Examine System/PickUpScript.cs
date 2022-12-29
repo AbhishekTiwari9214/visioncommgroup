@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyPickUpScript : MonoBehaviour
+public class PickUpScript : MonoBehaviour
 {
-    public GameObject keyOB;
+    public GameObject RealOB;
     public GameObject invOB;
     public GameObject pickUpText;
 
@@ -44,7 +44,7 @@ public class KeyPickUpScript : MonoBehaviour
     {
         if (inReach && Input.GetButtonDown("Get"))
         {
-            keyOB.SetActive(false);
+            RealOB.SetActive(false);
             invOB.SetActive(true);
             pickUpText.SetActive(false);
         }
