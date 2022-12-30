@@ -7,10 +7,10 @@ public class newitempickup : MonoBehaviour
     float clicked = 0;
     float clicktime = 0;
     float clickdelay = 0.5f;
-public Item Item;
+public Item item;
 void Pickup()
 {
-InventoryManager.Instance.Add(Item);
+InventoryManager.Instance.Add(item);
 Destroy(gameObject);
 }
 

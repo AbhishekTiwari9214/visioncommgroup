@@ -55,8 +55,11 @@ public class ExamineScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(inReach && Input.GetButtonDown("Interact"))
+
+        if(inReach && Input.GetMouseButtonDown(0))
         {
+           inReach = true;
+            InteractText.SetActive(true);
             mainCamera.SetActive(false);
             examineCamera.SetActive(true);
             isExaming = true;

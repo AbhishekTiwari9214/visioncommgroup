@@ -33,6 +33,7 @@ public void Add(Item item)
 public void Remove(Item item)
   {
     Items.Remove(item);
+    SetInventoryItems();
   }
   
 

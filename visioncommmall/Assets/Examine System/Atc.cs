@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Atc : MonoBehaviour
 {
     [SerializeField] ExamineScript script;
-
+  public Item Item;
+  public Item item;
     public Button addtoCart;
     public GameObject mainCamera;
     public GameObject examineCamera;
@@ -37,7 +38,7 @@ void TaskOnClick()
 		mainCamera.SetActive(true);
             examineCamera.SetActive(false);
             Time.timeScale = 1;
-		script.RealObject.SetActive(false);
+		Pickup();
 		player.SetActive(true);
 		isExaming = false;
             ExamineUI.SetActive(false);
@@ -47,4 +48,10 @@ void TaskOnClick()
             aboutText.SetActive(false);
 	}
 	}
+
+      void Pickup()
+{
+InventoryManager.Instance.Add(item);
+Destroy(gameObject);
+}
 }
