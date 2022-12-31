@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class newitempickup : MonoBehaviour
 {
-    float clicked = 0;
-    float clicktime = 0;
-    float clickdelay = 0.5f;
+    //float clicked = 0;
+   // float clicktime = 0;
+  //  float clickdelay = 0.5f;
 public Item item;
 void Pickup()
 {
