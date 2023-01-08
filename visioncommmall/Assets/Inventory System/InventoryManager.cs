@@ -97,11 +97,22 @@ public void EnableItemsRemove()
 
   public void SetInventoryItems()
 {
+  // if (Items.Count!=InventoryItems.Length)
+  // {
 InventoryItems = ItemContent.GetComponentsInChildren<InventoryItemController>();
 for(int i=0;i < Items.Count;i++)
 {
 InventoryItems[i].AddItem(Items[i]);
 }
+    
+  // }
+//   else{
+//    InventoryItems = ItemContent.GetComponentsInChildren<InventoryItemController>();
+// for(int i=0;i < Items.Count;i++)
+// {
+// InventoryItems[(i+Items.Count)].AddItem(Items[i]);
+// } 
+//   }
 
 }
 
